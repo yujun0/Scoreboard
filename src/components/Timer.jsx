@@ -72,7 +72,7 @@ const Timer = ({ initialTime = 600 }) => {
                     </form>
                 ) : (
                     <div
-                        className={`text-7xl sm:text-8xl font-mono font-black tracking-widest text-center cursor-pointer select-none transition-colors duration-300 drop-shadow-[0_0_10px_rgba(0,0,0,0.5)] ${isActive ? 'text-green-400 drop-shadow-[0_0_15px_rgba(74,222,128,0.3)]' : 'text-red-500 drop-shadow-[0_0_15px_rgba(239,68,68,0.3)]'}`}
+                        className={`text-6xl md:text-7xl font-mono font-black tracking-widest text-center cursor-pointer select-none transition-colors duration-300 drop-shadow-[0_0_10px_rgba(0,0,0,0.5)] overflow-hidden ${isActive ? 'text-green-400 drop-shadow-[0_0_15px_rgba(74,222,128,0.3)]' : 'text-red-500 drop-shadow-[0_0_15px_rgba(239,68,68,0.3)]'}`}
                         onClick={() => !isActive && setIsEditing(true)}
                     >
                         {formatTime(timeLeft)}
